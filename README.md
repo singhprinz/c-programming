@@ -1,2 +1,2 @@
-# c-programming
-Basic programs for begginers
+# C-programming
+Basic programs for c coding.
