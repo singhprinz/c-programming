@@ -3,18 +3,18 @@
 ![image](https://user-images.githubusercontent.com/83390756/119222126-71ea8d80-bb10-11eb-94d9-bee4cf27bcf6.png)
 
 
-#What is C Programming Langauge?
+# What is C Programming Langauge?
 
 C is a general-purpose programming language that is extremely popular, simple, and flexible to use. It is a structured programming language that is machine-independent and extensively used to write various applications, Operating Systems like Windows, and many other complex programs like Oracle database, Git, Python interpreter, and more.
 
-#Origin:-
+## Origin:-
 
 A successor to the programming language B, C was originally developed at Bell Labs by Dennis Ritchie between 1972 and 1973 to construct utilities running on Unix. It was applied to re-implementing the kernel of the Unix operating system. During the 1980s, C gradually gained popularity. It has become one of the most widely used programming languages,with C compilers from various vendors available for the majority of existing computer architectures and operating systems. C has been standardized by the ANSI since 1989 (ANSI C) and by the International Organization for Standardization (ISO). 
 
 ![image](https://user-images.githubusercontent.com/83390756/119222108-5b443680-bb10-11eb-861e-4db4544ec417.png)
 
 
-#Overview :-
+## Overview :-
 
 Timeline of language development Year 	C Standard:- 
 1972 	Birth
@@ -52,7 +52,7 @@ The C language also exhibits the following characteristics:
 
 While C does not include certain features found in other languages (such as object orientation and garbage collection), these can be implemented or emulated, often through the use of external libraries (e.g., the GLib Object System or the Boehm garbage collector). 
 
-#Reserved Words :- 
+## Reserved Words :- 
 
 C89 has 32 reserved words, also known as keywords, which are the words that cannot be used for any purposes other than those for which they are predefined:
 
@@ -109,7 +109,7 @@ C11 reserved seven more words:
 
 Most of the recently reserved words begin with an underscore followed by a capital letter, because identifiers of that form were previously reserved by the C standard for use only by implementations. Since existing program source code should not have been using these identifiers, it would not be affected when C implementations started supporting these extensions to the programming language. Some standard headers do define more convenient synonyms for underscored identifiers. The language previously included a reserved word called entry, but this was seldom implemented, and has now been removed as a reserved word.
 
-#Operators:- 
+## Operators:- 
 C supports a rich set of operators, which are symbols used within an expression to specify the manipulations to be performed while evaluating that expression. C has operators for:
 
     arithmetic: +, -, *, /, %
@@ -134,7 +134,7 @@ C uses the operator = (used in mathematics to express equality) to indicate assi
 
 The C operator precedence is not always intuitive. For example, the operator == binds more tightly than (is executed prior to) the operators & (bitwise AND) and | (bitwise OR) in expressions such as x & 1 == 0, which must be written as (x & 1) == 0 if that is the coder's intent.
 
-#Pointers :- 
+## Pointers :- 
 
 C supports the use of pointers, a type of reference that records the address or location of an object or function in memory. Pointers can be dereferenced to access data stored at the address pointed to, or to invoke a pointed-to function. Pointers can be manipulated using assignment or pointer arithmetic. The run-time representation of a pointer value is typically a raw memory address (perhaps augmented by an offset-within-word field), but since a pointer's type includes the type of the thing pointed to, expressions including pointers can be type-checked at compile time. Pointer arithmetic is automatically scaled by the size of the pointed-to data type. Pointers are used for many purposes in C. Text strings are commonly manipulated using pointers into arrays of characters. Dynamic memory allocation is performed using pointers. Many data types, such as trees, are commonly implemented as dynamically allocated struct objects linked together using pointers. Pointers to functions are useful for passing functions as arguments to higher-order functions (such as qsort or bsearch) or as callbacks to be invoked by event handlers. ![image](https://user-images.githubusercontent.com/83390756/119222306-44eaaa80-bb11-11eb-9277-1bedcf762f27.png)
 
@@ -145,7 +145,7 @@ Void pointers (void *) point to objects of unspecified type, and can therefore b
 
 Careless use of pointers is potentially dangerous. Because they are typically unchecked, a pointer variable can be made to point to any arbitrary location, which can cause undesirable effects. Although properly used pointers point to safe places, they can be made to point to unsafe places by using invalid pointer arithmetic; the objects they point to may continue to be used after deallocation (dangling pointers); they may be used without having been initialized (wild pointers); or they may be directly assigned an unsafe value using a cast, union, or through another corrupt pointer. In general, C is permissive in allowing manipulation of and conversion between pointer types, although compilers typically provide options for various levels of checking. Some other programming languages address these problems by using more restrictive reference types. 
 
-#Arrays :- 
+## Arrays :- 
 
 Array types in C are traditionally of a fixed, static size specified at compile time. (The more recent C99 standard also allows a form of variable-length arrays.) However, it is also possible to allocate a block of memory (of arbitrary size) at run-time, using the standard library's malloc function, and treat it as an array. C's unification of arrays and pointers means that declared arrays and these dynamically allocated simulated arrays are virtually interchangeable. ![image](https://user-images.githubusercontent.com/83390756/119222289-30a6ad80-bb11-11eb-88e4-6a72d69cb7a7.png)
 
@@ -158,14 +158,14 @@ Multi-dimensional arrays are commonly used in numerical algorithms (mainly from 
 
 C99 introduced "variable-length arrays" which address some, but not all, of the issues with ordinary C arrays.
 
-#File handling and streams :- 
+## File handling and streams :- 
 
 ![image](https://user-images.githubusercontent.com/83390756/119222263-0a810d80-bb11-11eb-8493-c21ee60e8e0b.png)
 
 
 File input and output (I/O) is not part of the C language itself but instead is handled by libraries (such as the C standard library) and their associated header files (e.g. stdio.h). File handling is generally implemented through high-level I/O which works through streams. A stream is from this perspective a data flow that is independent of devices, while a file is a concrete device. The high level I/O is done through the association of a stream to a file. In the C standard library, a buffer (a memory area or queue) is temporarily used to store data before it's sent to the final destination. This reduces the time spent waiting for slower devices, for example a hard drive or solid state drive. Low-level I/O functions are not part of the standard C library but are generally part of "bare metal" programming (programming that's independent of any operating system such as most but not all embedded programming). With few exceptions, implementations include low-level I/O.
 
-#Uses :- 
+## Uses :- 
 
 C is widely used for systems programming in implementing operating systems and embedded system applications , because C code, when written for portability, can be used for most purposes, yet when needed, system-specific code can be used to access specific hardware addresses and to perform type punning to match externally imposed interface requirements, with a low run-time demand on system resources. ![image](https://user-images.githubusercontent.com/83390756/119222236-f0472f80-bb10-11eb-8b7e-69aac18e670b.png)
 
@@ -180,4 +180,4 @@ C is sometimes used as an intermediate language by implementations of other lang
 
 C has also been widely used to implement end-user applications. However, such applications can also be written in newer, higher-level languages. 
 
-Source :- wikipedia ,google.
+### Source :- wikipedia ,google.
