@@ -1,5 +1,4 @@
-# C-programming
-Basic programs for c coding.
+
 
 ![image](https://user-images.githubusercontent.com/83390756/119222126-71ea8d80-bb10-11eb-94d9-bee4cf27bcf6.png)
 
