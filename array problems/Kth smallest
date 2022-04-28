@@ -1,2 +1,40 @@
-Given an\*array arr[] and an integer K where K is smaller than size of array,
-the task is to find the Kth smallest element in the given array. It is given that all array elements are distinct
+/*Given an array arr[] and an integer K where K is smaller than size of array,
+the task is to find the Kth smallest element in the given array. It is given that all array elements are distinct/*
+
+#include<stdio.h>
+int kthSmallest(int arr[], int l, int r, int k)
+{
+int temp;
+for(int i=l;i<=(r);i++)
+{
+for(int j=l;j<=(r);j++)
+{
+if(arr[j] > arr[j+1])
+{
+temp = arr[j];
+arr[j] = arr[j+1];
+arr[j+1] = temp;
+}
+}
+}
+for(int i=0;i<=(r);i++)
+return(arr[k-1]);
+}
+int main()
+{
+int t;
+scanf("%d",&t); // no. of test cases
+while(t--)
+{
+int n;
+scanf("%d",&n); // total number of inputs
+int a[n];
+for(int i=0;i<n;i++)
+scanf("%d",&a[i]);    // array elements
+int k;
+scanf("%d",&k);
+printf("%d", kthSmallest(a,0,n-1,k));
+printf("\n");
+}
+return 0;
+}
